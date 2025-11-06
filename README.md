@@ -52,3 +52,6 @@ export default tseslint.config({
   },
 })
 ```
+
+
+editiing readme

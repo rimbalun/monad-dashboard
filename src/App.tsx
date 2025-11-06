@@ -13,8 +13,8 @@ import { useEffect, useState } from "react";
 const App = () => {
   // const { latestBlock, fetchLatestBlock, blockQueue, setBlockQueue, tileQueue, setTileQueue} = useBlockSync()
   const { latestBlock, latestTile } = useRealTime({
-  wsUrl: "wss://testnet-rpc.monad.xyz",
-  rpcUrl: "https://testnet-rpc.monad.xyz",
+  wsUrl: "wss://monad-testnet.rpc.hypersync.xyz/",
+  rpcUrl: "https://monad-testnet.hypersync.xyz/",
 })
 const {tps, gas } = useTPS()
   const { boardWidth, boardHeight, tiles, currentTile } = useTetrisEngine(tps, latestBlock, latestTile);
